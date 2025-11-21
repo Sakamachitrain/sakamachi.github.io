@@ -16,7 +16,19 @@
 
 <p id="msg" style="color:red;margin-top:15px;"></p>
 
-<script src="login.js"></script>
+<script>
+  const PASSWORD = "SakaKoma1965"; // ←ここに希望のパスワードを直接入力
+
+  document.getElementById("btn").onclick = () => {
+    const input = document.getElementById("pw").value.trim(); // 前後空白を削除
+    if(input === PASSWORD){
+      localStorage.setItem("komashin_admin_login","OK");
+      location.href = "index.html";
+    } else {
+      document.getElementById("msg").textContent = "パスワードが違います。";
+    }
+  }
+</script>
 
 </body>
 </html>
