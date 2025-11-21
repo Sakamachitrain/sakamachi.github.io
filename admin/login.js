@@ -7,7 +7,7 @@ async function sha256(str) {
 }
 
 // ★パスワード（ハッシュ保存）
-const PASSWORD_HASH = "b6ef0a0460a2f5f82a4665e7b7aa2b6c090d824a807dc16938afcb0bae9b7e3c";
+const PASSWORD_HASH = "5d8c63edc493827e7fb453efc636ce8b1d11f228dbcd56f1af4c8ff8548db7bb";
 
 document.getElementById("btn").onclick = async () => {
   const input = document.getElementById("pw").value;
